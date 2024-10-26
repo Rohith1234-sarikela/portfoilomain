@@ -1,0 +1,105 @@
+.education-section {
+  background: linear-gradient(135deg, #f7fafc 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  margin: 30px auto;
+  max-width: 850px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.education-section:hover {
+  transform: translateY(-8px);
+}
+
+/* Title styling */
+.education-title {
+  font-size: 2.6rem;
+  color: #2d3748;
+  text-align: center;
+  margin-bottom: 35px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1.5px;
+  position: relative;
+}
+
+/* Decorative line below the title */
+.education-title::after {
+  content: "";
+  width: 120px;
+  height: 5px;
+  background: linear-gradient(90deg, #1abc9c, #3498db); /* Gradient accent */
+  display: block;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+
+/* Education list styling */
+.education-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Styling for individual education items */
+.education-item {
+  font-size: 1.3rem;
+  color: #34495e;
+  background-color: #ffffff;
+  padding: 25px;
+  margin: 20px 0;
+  border-left: 6px solid #1abc9c;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+}
+
+/* Adding hover effects with a subtle shadow */
+.education-item:hover {
+  background-color: #e9fcf8;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  border-left: 6px solid #3498db;
+}
+
+/* Institution name styling */
+.education-item strong {
+  color: #1abc9c;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Add icon styles to enhance the section visually */
+.education-item::before {
+  content: "🎓"; /* Emoji or font-based icon */
+  font-size: 1.4rem;
+  margin-right: 10px;
+  color: #3498db;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .education-title {
+      font-size: 2.2rem;
+  }
+
+  .education-item {
+      font-size: 1.1rem;
+      padding: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .education-section {
+      padding: 25px;
+  }
+
+  .education-title {
+      font-size: 2rem;
+  }
+
+  .education-item {
+      font-size: 1rem;
+      padding: 15px;
+  }
+}
